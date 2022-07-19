@@ -5,7 +5,7 @@
 }
 
 /*-------------------
-      utilities
+    utilities
  -------------------*/
 
 .container{
@@ -15,13 +15,39 @@
 
 
 
+
+/*-------------------
+    nav-section
+ -------------------*/
+nav{
+    width: 1200px;
+    margin: 20px auto 50px ;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content:space-between;
+    
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #3A3A3A;
+}
+.nav-logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+.nav-menu{
+    display: flex;
+    gap: 0 34px;
+}
+
 /*-------------------
       banner-section
  -------------------*/
 .banner-cont{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: space-between;
+    gap: 0 133px;
     align-items: center;
 }
 
@@ -38,14 +64,18 @@
     line-height: 24px;
 }
 .btn{
+    display: inline-block;
     font-size: 16px;
     font-weight: 700;
     padding: 10px 24px;
-    border: none;
     border-radius: 41px;
     color: white;
     background-color: #E02C6D;
     margin-top: 16px;
+    text-decoration: none;
+}
+.btn i{
+    padding-left: 8px;
 }
 .banner-img {
     background-image: url(images/Circle\ design.svg);
@@ -105,7 +135,7 @@
     line-height: 30px;
     padding: 17px 15px;
     background-color: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
 
 }
 .collection p{
@@ -127,3 +157,75 @@
     font-size: 14px;
     font-weight: 700;
 }
+
+/*-------------------
+    featured-section
+ -------------------*/
+.feature-cont{
+    width: 1110px ;
+    margin:100px auto 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.feature{
+    width: 100%;
+    display: flex;
+    gap: 0 96px;
+    align-items: center;
+}
+.feature .feature-img img{
+    width: 404px;
+    height: 270px;
+}
+.feature-details h1{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+.feature-details p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+}
+.feature-details a{
+    border-radius: 0;
+}
+
+
+/*-------------------
+    footer-section
+ -------------------*/
+ footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    color: white;
+    background-color: #0A0826;
+    padding: 50px 0;
+ }
+ .footer-details{
+    text-align: center;
+    line-height: 30px;
+ }
+ .footer-details h2{
+    font-size: 24px;
+    font-weight: 700;
+ }
+ .footer-details p{
+    font-size: 14px;
+    color: #D9DBE1;
+ }
+ .footer-details span{
+    display: flex;
+    font-size: 17px;
+    gap: 0 14px;
+    justify-content: center;
+    
+ }
+ .footer-details span i{
+    padding: 8px;
+    background-color: #444343;
+    border-radius: 50%;
+ }
